@@ -5,7 +5,7 @@ const Signup = () => {
   return (
     <>
       <Main className="bg-white">
-        <section className="mainWrapper w-full flex justify-center items-center mt-14 h-auto">
+        <section className="mainWrapper w-full flex justify-center items-center h-auto">
           <form className="wrapper mt-8 mb-8 p-4 flex flex-col justify-center items-center rounded-md text-gray-900 shadow-xl">
             <div className="mt-8">
               <div className="text-2xl ">Sign Up</div>
@@ -38,12 +38,7 @@ const Signup = () => {
               />
             </div>
             <div className="checkContainer flex gap-1 text-sm mt-8">
-              <input
-                className=""
-                type="checkbox"
-                name="checkbox"
-                id="cbox"
-              />
+              <input className="" type="checkbox" name="checkbox" id="cbox" />
               <label htmlFor="cbox">I agree to the terms and conditions.</label>
             </div>
             <div className="btnContainer flex justify-center mt-8">
@@ -57,3 +52,4 @@ const Signup = () => {
 };
 
 export default Signup;
+

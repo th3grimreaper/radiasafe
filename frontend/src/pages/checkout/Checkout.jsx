@@ -60,7 +60,7 @@ const Checkout = () => {
 
   const itemsTotal = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
-    0
+    0,
   );
   const deliveryCharges = 150;
   const discount = 300;
@@ -145,13 +145,13 @@ const Checkout = () => {
                                 className="text-sm text-red-600 underline"
                                 onClick={() => {
                                   const confirmDelete = window.confirm(
-                                    "Are you sure you want to delete this address?"
+                                    "Are you sure you want to delete this address?",
                                   );
                                   if (confirmDelete) {
                                     setSavedAddresses((prev) =>
                                       prev.filter(
-                                        (_, addrIndex) => addrIndex !== index
-                                      )
+                                        (_, addrIndex) => addrIndex !== index,
+                                      ),
                                     );
                                   }
                                 }}
@@ -264,7 +264,7 @@ const Checkout = () => {
               <AccordionTrigger>Payment Mode</AccordionTrigger>
               <AccordionContent>
                 {/* Placeholder for payment options */}
-              <PaymentMode />
+                <PaymentMode />
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -284,7 +284,7 @@ const Checkout = () => {
                 placeholder="Enter code"
                 className="flex-1 min-w-[100px] border border-gray-300 px-3 py-2 rounded-l-lg focus:outline-none"
               />
-              <button className="bg-black text-white px-4 py-2 rounded-r-lg hover:text-gray-300 transition-colors">
+              <button className="bg-black text-white px-4 py-2 rounded-r-lg hover:bg-gray-800 transition-colors">
                 Apply
               </button>
             </div>

@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <>
       <Main className="bg-white">
-        <section className="mainWrapper w-full flex justify-center items-center mt-14 h-auto">
+        <section className="mainWrapper w-full flex justify-center items-center h-auto">
           <form className="wrapper mt-8 mb-8 p-4 flex flex-col justify-center items-center rounded-md text-gray-900 shadow-xl">
             <div className="mt-8">
               <div className="text-2xl ">Login</div>
@@ -57,3 +57,4 @@ const Login = () => {
 };
 
 export default Login;
+

@@ -16,7 +16,7 @@ import {
 const Home = () => {
   return (
     <>
-      <Main className="p-4 mt-14 bg-white">
+      <Main className="p-4 bg-white">
         <MainGrid className="pt-4">
           <MainContent className=" text-gray-900 p-4 rounded-sm">
             <Hero />

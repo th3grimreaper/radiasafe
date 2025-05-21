@@ -9,7 +9,7 @@ import CartDrawer from "../cartdrawer/CartDrawer";
 const Header = () => {
   return (
     <>
-      <header className="z-[99] flex justify-center fixed right-0 top-0 left-0 text-[1rem] text-gray-900 bg-gray-100 shadow-2xs">
+      <header className="z-[99] flex justify-center text-[1rem] text-gray-900 bg-gray-100 shadow-2xs">
         <div className="p-4 flex flex-auto items-center justify-start gap-2">
           <Sidebar />
           <Link className="flex gap-2" to="/">
